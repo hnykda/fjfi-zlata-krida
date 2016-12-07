@@ -27,12 +27,12 @@ optional arguments:
   -d, --save_dicts      Ulozi pomocne dictionaries (pro debug)
 ```
 
-### Spuštění zpracování
+### Spuštění vyhodnocení
 Skript potřebuje ve skutečni jen jeden parametr a tím je adresa za `-u/--url`.
 
-Touto adresou je odkaz na *Seznam vyučujících dle jména*. Příkladem je třeba: http://geraldine.fjfi.cvut.cz/WORK/Anketa/LS2015/67_pub/teachers/index.html .
+Touto adresou je odkaz na *Seznam vyučujících dle jména* z roku, který chcete vyhodnotit. Příkladem je třeba: http://geraldine.fjfi.cvut.cz/WORK/Anketa/LS2015/67_pub/teachers/index.html .
 
-Skript pak tedy stačí sputit jako `python anketa.py --url http://geraldine.fjfi.cvut.cz/WORK/Anketa/LS2015/67_pub/teachers/index.html` a spustí se zpracování.
+Skript pak tedy stačí sputit jako `python anketa.py --url http://geraldine.fjfi.cvut.cz/WORK/Anketa/LS2015/67_pub/teachers/index.html` a spustí se zpracování. Vytvoří se v dané složce adresář s několik výstupními soubory a logovacími informacemi. Nejdůležitější je pak soubor `prosli.csv`, který obsahuje (snad) srozumitelné metriky a údaje podstatné k vyhodnocení.
 
 # TODO:
 Ve skriptu lze nalézt různá TODO. Kromě toho by mu vůbec neuškodil celkový rewrite, tohle je hrozná prasárna, ale nechtělo se mi s tím více hrát. Dependencies jsou také jak bagr na vejce...

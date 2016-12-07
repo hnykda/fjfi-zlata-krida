@@ -1,7 +1,7 @@
 # fjfi-zlata-krida
 
 ## Instalace
-1. Potřebujete Python (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `python install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`).
+1. Potřebujete Python (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `python install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`). Pokud máte ubuntu, můžete knihovny a python nainstalovat jako: `sudo apt-get install python3-pandas python3-bs4`.
 2. Pak stačí exekuovat skript jak je popsáno níže
 
 ## Použití

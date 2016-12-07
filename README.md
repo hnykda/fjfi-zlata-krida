@@ -35,5 +35,11 @@ Touto adresou je odkaz na *Seznam vyučujících dle jména* z roku, který chce
 
 Skript pak tedy stačí sputit jako `python anketa.py --url http://geraldine.fjfi.cvut.cz/WORK/Anketa/LS2015/67_pub/teachers/index.html` a spustí se zpracování. Vytvoří se v dané složce adresář s několik výstupními soubory a logovacími informacemi. Nejdůležitější je pak soubor `prosli.csv`, který obsahuje (snad) srozumitelné metriky a údaje podstatné k vyhodnocení.
 
-# TODO:
-Ve skriptu lze nalézt různá TODO. Kromě toho by mu vůbec neuškodil celkový rewrite, tohle je hrozná prasárna, ale nechtělo se mi s tím více hrát. Dependencies jsou také jak bagr na vejce...
+# TODO
+Ve skriptu lze nalézt různá TODO. Kromě toho by mu vůbec neuškodil celkový rewrite, tohle je hrozná prasárna, ale nechtělo se mi s tím více hrát. Dependencies jsou také jak bagr na vejce... Shrnutí, co by se dalo zlepšit:
+
+1. Dostat se rovnou k databázi, ze které se to tahá na web. Pak by to stačilo na pár selectů a nemusely by se dělat takové opičárny se scrapováním... To za mého působení nebylo možné, protože databáze se střežila jako Fort Knox.
+2. logging pomocí `logging` modulu
+3. Odstranění `pandas` jako dependencies (dicts a tuples by stačily)
+
+Než to ale někdo začne dělat, měl by si odpovědět na otázku, zda to u skriptu, který se spustí jednou za půl roku na 1 minutu, je potřeba...

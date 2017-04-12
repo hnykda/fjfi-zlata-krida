@@ -1,16 +1,25 @@
-# fjfi-zlata-krida
+# Spracování výsledků ankety FJFI pro soutěž Zlatá křída
 
 ## Instalace
-Potřebujete Python (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `python install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`). Pokud máte ubuntu, můžete knihovny a python nainstalovat jako: `sudo apt-get install python3-pandas python3-bs4` a jiné obdoby dle distribuce. Jako vždy, [google je váš kamarád](http://lmgtfy.com/?q=how+to+install+python)... 
+Potřebujete Python verze 3 (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `python3 install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`). Pokud máte ubuntu, můžete knihovny a python nainstalovat jako: `sudo apt-get install python3-pandas python3-bs4` a jiné obdoby dle distribuce. Jako vždy, [google je váš kamarád](http://lmgtfy.com/?q=how+to+install+python)... 
 
-Pak stačí exekuovat skript jak je popsáno níže:
+Osobně doporučuji vytvořit si virtual environment a knihovny nainstalovat tam:
+
+```
+python3 -m venv anketa-venv
+source anketa-venv/bin/activate
+pip install -r requirements.txt
+python3 ankety.py -u <URL_NA_SEZNAM_UCITELU_DLE_JMENA>
+```
+
+Pak stačí exekuovat skript pomocí `python3 anketa.py` jak je popsáno níže.
 
 ## Použití
 ### Nápověda
 Nápovědu vyvoláte pomocí `--help`:
 
 ```
-$ python anketa.py --help      
+$ python3 anketa.py --help      
 usage: anketa.py [-h] [-u URL] [-n POCET_UCITELU] [-s SLEEP] [-p PATH] [-d]
 
 Zpracovani ankety FJFI na geraldine serverech

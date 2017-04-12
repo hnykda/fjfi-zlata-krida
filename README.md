@@ -1,16 +1,17 @@
 # Spracování výsledků ankety FJFI pro soutěž Zlatá křída
 
 ## Instalace
-Potřebujete Python verze 3 (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `python3 install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`). Pokud máte ubuntu, můžete knihovny a python nainstalovat jako: `sudo apt-get install python3-pandas python3-bs4` a jiné obdoby dle distribuce. Jako vždy, [google je váš kamarád](http://lmgtfy.com/?q=how+to+install+python)... 
-
-Osobně doporučuji vytvořit si virtual environment a knihovny nainstalovat tam:
-
+### Rychlá varianta
+Ve složce se skriptem `anketa.py` a `requirements.txt`.
 ```
 python3 -m venv anketa-venv
 source anketa-venv/bin/activate
 pip install -r requirements.txt
 python3 ankety.py -u <URL_NA_SEZNAM_UCITELU_DLE_JMENA>
 ```
+
+### Vysvětlení + pomalá varianta
+Potřebujete Python verze 3 (testováno na verzi 3.5) a pak knihovny `pandas` a `beautifulsoup`. Ty lze (máte-li python v `PATH`) nainstalovat pomocí `pip install -r requirements.txt` (případně jen `pip pandas beautifulsoup4`). Pokud máte ubuntu, můžete knihovny a python nainstalovat jako: `sudo apt-get install python3-pandas python3-bs4` a jiné obdoby dle distribuce. Jako vždy, [google je váš kamarád](http://lmgtfy.com/?q=how+to+install+python)... 
 
 Pak stačí exekuovat skript pomocí `python3 anketa.py` jak je popsáno níže.
 
